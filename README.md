@@ -74,3 +74,8 @@ vlc --no-audio --avcodec-hw=any --sout-rtp-proto=udp --network-caching=300 --sou
 - The ROS Image topic stream may be buggy with framerates too fast for the Image publisher and the buffer writing. Stick with 10/1 fps unless you want to debug? :)
 - If too many frames are being dropped, it is likely due to network bandwidth. Try dropping the bitrate.
 - If the ROS topic isn't available, you will get a `can't prepare media` error after a delay.
+
+## TODO: 
+
+- [ ] Check resolution settings (seems like 200 pixels is minimal setting) 
+
