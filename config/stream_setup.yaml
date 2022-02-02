@@ -26,7 +26,8 @@ streams: # Cannot rename - must leave this as is.
   
   map-stream: 
     type: topic
-    source: /sweep_plotter/img 
-    mountpoint: /map
-    bitrate: 500
-    caps: video/x-raw,framerate=10/1,width=240,height=400
+    source: /bebop/camera1/image_raw
+    mountpoint: /full
+    bitrate: 2000
+    caps: video/x-raw,framerate=30/1,width=640,height=480
+
