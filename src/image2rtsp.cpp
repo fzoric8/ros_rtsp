@@ -110,7 +110,7 @@ GstCaps* Image2RTSPNodelet::gst_caps_new_from_image(const sensor_msgs::Image::Co
             "format", G_TYPE_STRING, format->second.c_str(),
             "width", G_TYPE_INT, msg->width,
             "height", G_TYPE_INT, msg->height,
-            "framerate", GST_TYPE_FRACTION, 30, 1,
+            "framerate", GST_TYPE_FRACTION, 10, 1,
             nullptr);
 }
 
