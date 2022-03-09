@@ -77,5 +77,6 @@ vlc --no-audio --avcodec-hw=any --sout-rtp-proto=udp --network-caching=300 --sou
 
 ## TODO: 
 
-- [ ] Check resolution settings (seems like 200 pixels is minimal setting) 
-
+- [x] Check resolution settings (seems like 200 pixels is minimal setting) 
+- [x] Able to stream 1080p in approx realtime
+- [x] Camera buffer beware! 
