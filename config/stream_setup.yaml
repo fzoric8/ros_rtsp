@@ -31,10 +31,17 @@ streams: # Cannot rename - must leave this as is.
 #    bitrate: 2000
 #    caps: video/x-raw,framerate=10/1,width=800,height=600
 
-   uav-gui: 
+#   uav-gui: 
+#     type: topic
+#     source: /uav/gui
+#     mountpoint: /full
+#     bitrate: 500
+#     caps: video/x-raw,framerate=10/1,width=1920,height=1080
+
+   flir-stream: 
      type: topic
-     source: /uav/gui
+     source: /camera/image_raw
      mountpoint: /full
      bitrate: 500
-     caps: video/x-raw,framerate=10/1,width=1920,height=1080
-
+     caps: video/x-raw,framerate=10/1,width=1440,height=1080
+  
